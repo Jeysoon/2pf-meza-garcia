@@ -25,7 +25,6 @@ export class AlumnosComponent implements OnInit {
     this.showDeleteSuccess = this.alumnosService.showDeleteSuccess;
     this.alumnos$ = this.alumnosService.traerAlumnos()
     this.alumnosService.traerAlumnos().subscribe((data) => {
-      console.log('tragedia', data);
       this.dataSource.data = data;
     })
   }
